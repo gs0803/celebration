@@ -268,6 +268,27 @@
         <button class="celebrate-button" id="celebrateBtn">Let's Celebrate it together </button>
         <button class="next-page-button" id="nextPageBtn">Cake cutting</button>
     </div>
+    <!-- Audio Element for Background Music -->
+     <audio id="celebrationMusic" src="love.mp3" loop></audio>
+
+     <script>
+         document.getElementById('celebrateBtn').addEventListener('click', () => {
+             const music = document.getElementById("celebrationMusic");
+             music.play(); // Play the music
+ 
+             gsap.to('#celebrateBtn', {
+                 scale: 0.95,
+                 duration: 0.1,
+                 onComplete: () => {
+                     gsap.to('#celebrateBtn', {
+                         scale: 1,
+                         duration: 60,
+                         ease: "elastic.out(1, 0.3)"
+                     });
+                 }
+             });
+         });
+     </script>
 
     <script>
         // Canvas elements
