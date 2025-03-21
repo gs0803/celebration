@@ -1,12 +1,12 @@
 body {
     height: 96vh;
-    background-image: url('background.jpg');
+    background-image: url('background1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 img {
-    width : 90px;
+    width : 100px;
 }
 
 .star {
@@ -264,7 +264,7 @@ img {
 .inside-text {
     position: relative;
     top: -290px;
-    left: 30px;
+    left: 40px;
     transform: scale(0.7);
 }
 
